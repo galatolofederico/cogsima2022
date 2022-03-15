@@ -52,7 +52,7 @@ To train all the models run
 To train a specific model run
 
 ```
-python train.py --model <model> --train-batches 10000
+python train.py --model <model> --train-batches 10000 --save
 ```
 
 where model can be `encoderencoder` `vitencoder` `encoderdecoder` `vitdecoder`
