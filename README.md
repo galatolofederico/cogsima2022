@@ -2,6 +2,10 @@
 
 Repository for the paper [Enhancing Land Subsidence Awareness via InSAR Data and Deep Transformers]()
 
+![input](./README.md.d/input.jpg) | ![output](./README.md.d/output.jpg)
+|:---:|:---:|
+| input | output |
+
 ## Installation
 
 ### Clone and install the dependencies
