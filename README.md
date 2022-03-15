@@ -77,6 +77,8 @@ To compute all the metrics and plots from the paper run
 python evaluate.py
 ```
 
+Results will be available in `./results`
+
 ## Prediction
 
 To run the regression on all the missing data in a shapefile run
