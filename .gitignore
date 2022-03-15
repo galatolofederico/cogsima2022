@@ -1,0 +1,14 @@
+/env
+__pycache__/
+
+/dataset
+/trash
+/test
+
+/models
+/plots
+/results
+*.zip
+
+/wandb
+/checkpoints

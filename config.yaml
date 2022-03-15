@@ -1,0 +1,51 @@
+dataset:
+  raster:
+    crs: EPSG:4326
+    sample:
+      size: 20
+      min_points: 100
+      max_points: 300
+      pad_value: -1000
+  dem:
+    file: ./dataset/dem/eu_dem_v11_E40N20.TIF
+    resolution: 25
+    size: 120
+
+train:
+  batch_size: 16
+  lr: 0.0001
+  checkpoint_every: 500
+
+model:  
+  transformer:
+    checkpoint: "./models/model_{model}.pt"
+
+
+    encoderencoder:
+      dim: 128
+      depth: 8
+      heads: 6
+    
+    vitencoder:
+      dim: 128
+      depth: 8
+      heads: 6
+      patch_size: 12
+    
+    
+    encoderdecoder:
+      dim: 128
+      depth: 8
+      heads: 6
+    
+    vitdecoder:
+      dim: 128
+      depth: 8
+      heads: 6
+      patch_size: 12
+
+    mlm:
+      mask_prob: 0.5
+      include_prob: 0.2
+      pad_token: 0
+      mask_token: 1
