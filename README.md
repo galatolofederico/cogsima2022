@@ -71,6 +71,12 @@ To run the inference on the testing set on a specific model run
 python predict.py --model <model-path> --points <input-points> --eval-batches 1000
 ```
 
+To compute all the metrics and plots from the paper run
+
+```
+python evaluate.py
+```
+
 ## Prediction
 
 To run the regression on all the missing data in a shapefile run
